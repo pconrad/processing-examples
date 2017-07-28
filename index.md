@@ -10,3 +10,6 @@ examples from:
 Github source is here: <https://github.com/pconrad/processing-examples>
 
 * [Example_2_2_color_variation](Example_2_2_color_variation)
+
+* [Stick_Figure](Stick_Figure)
+
