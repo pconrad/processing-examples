@@ -2,7 +2,7 @@
 // P. Conrad, 7/27/2017
 
 void setup() {
-  size(512,512);
+  size(200,300);
   colorMode(RGB,255);
   smooth();  
 }
@@ -19,6 +19,4 @@ void draw() {
   line(100,150, 50, 180); // left arm
   line(100,150, 150, 180); // right arm
 
- 
- 
  }

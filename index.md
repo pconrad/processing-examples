@@ -13,3 +13,5 @@ Github source is here: <https://github.com/pconrad/processing-examples>
 
 * [Stick_Figure](Stick_Figure)
 
+* [Stick_Figure_02](Stick_Figure_02)
+
