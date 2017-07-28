@@ -1,5 +1,4 @@
-// A colorful variation on Example 2-2: Make Circles from
-// Getting Started with Processing by Casey Reas and Ben Fry
+// Simple Hard Coded Stick Figure
 // P. Conrad, 7/27/2017
 
 void setup() {
@@ -9,5 +8,17 @@ void setup() {
 }
 
 void draw() {
-  ellipse(100,100, 80, 80);
-}
+  
+  ellipse(100,100, 40, 40); // head
+  
+  line(100,120, 100, 200); // body
+  
+  line(100,200, 75, 240); // left leg
+  line(100,200, 125, 240); // right leg
+
+  line(100,150, 50, 180); // left arm
+  line(100,150, 150, 180); // right arm
+
+ 
+ 
+ }
