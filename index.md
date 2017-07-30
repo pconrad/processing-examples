@@ -9,11 +9,11 @@ examples from:
 
 Github source is here: <https://github.com/pconrad/processing-examples>
 
-* [Example_2_2_color_variation](Example_2_2_color_variation)
-
-* [Stick_Figure](Stick_Figure)
-
-* [Stick_Figure_02](Stick_Figure_02)
+| Example | Description |
+|---------|-------------|
+| [Example_2_2_color_variation](Example_2_2_color_variation) | A variation on an example from Reas and Fry, with color varying on each frame, cycling through the Hues of the HSB color space (Hue/Saturation/Brightness).  Click to change the color to one that is 180 degrees in Hue from current color.  |
+| [Stick_Figure](Stick_Figure) | stick figure with hard coded values |
+| [Stick_Figure_02](Stick_Figure_02) | stick figure using variables and `PVector` objects |
 
 # Outline of a Processing Sketch
 
@@ -35,6 +35,12 @@ void draw() {
    ```processing
    background(204); // 204 is the color, in this case, light grey
    ```
+   
+* To draw a continuous line
+   ```processing
+   line(mouseX, mouseY, pmouseX, pmouseY);
+   ```
+   
 
 # Some useful special values 
 
@@ -43,3 +49,4 @@ void draw() {
 | `framecount` | increments by one with each frame |
 | `mousePressed` | is the mouse pressed? |
 | `mouseX`,`mouseY` | location of the mouse |
+| `pmouseX`,`pmouseY` | location of the mouse during previous frame |
