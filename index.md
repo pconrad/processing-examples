@@ -15,3 +15,31 @@ Github source is here: <https://github.com/pconrad/processing-examples>
 
 * [Stick_Figure_02](Stick_Figure_02)
 
+# Outline of a Processing Sketch
+
+```processing
+
+void setup() {
+ // run once to initialize
+}
+
+void draw() {
+ // run every frame
+}
+
+```
+
+# Some useful idioms
+
+* To clear frame before drawing, use this at top of `draw()`
+   ```processing
+   background(204); // 204 is the color, in this case, light grey
+   ```
+
+# Some useful special values 
+
+| Variable Name | Explanation |
+|---------------|-------------|
+| `framecount` | increments by one with each frame |
+| `mousePressed` | is the mouse pressed? |
+| `mouseX`,`mouseY` | location of the mouse |
