@@ -1,7 +1,7 @@
 // Stick Figure with function
-// P. Conrad, 7/27/2017
+// P. Conrad, 7/30/2017
 
-PVector headCenter = new PVector(100, 100);
+PVector headCenter = new PVector(250, 250);
 float headDiameter = 50;
 float bodyHeight=100;
 float legAngleDegrees = 60;
