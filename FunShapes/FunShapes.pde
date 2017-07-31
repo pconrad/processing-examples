@@ -17,6 +17,16 @@ void setup() {
 }
 
 void draw() {
+  if (keyPressed) {
+   if (key=='c' || key == 'C') {
+      shape = 'c'; 
+   } else if (key=='r' || key == 'R') {
+      shape = 'r'; 
+   } else if (key=='s' || key == 'S') {
+      shape = 's'; 
+   }
+    
+  }
   if (mousePressed && dist(prevShapeX,prevShapeY,mouseX,mouseY) > shapeDelta) {
     hue = (hue + hueDelta) % 360;
     fill ( (hue), 100,100,50);
@@ -36,15 +46,5 @@ void draw() {
     
     prevShapeX = mouseX; prevShapeY = mouseY;
   }
-}
-
-void keyPressed() {
-   if (key=='c' || key == 'C') {
-      shape = 'c'; 
-   } else if (key=='r' || key == 'R') {
-      shape = 'r'; 
-   } else if (key=='s' || key == 'S') {
-      shape = 's'; 
-   }
   
 }
