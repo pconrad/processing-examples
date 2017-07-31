@@ -1,0 +1,102 @@
+<h1 id="processing-examples-by-p-conrad">Processing Examples by P. Conrad</h1>
+
+<p>A few small examples of programs in Processing.  Many are small variations on
+examples from:</p>
+
+<ul>
+  <li><a href="https://www.safaribooksonline.com/library/view/make-getting-started/9781457187070/">Getting Started with Processing</a> by Casey Reas and Ben Fry
+Copyright © 2010 Casey Reas and Ben Fry. 
+Published by O’Reilly Media, Inc.</li>
+</ul>
+
+<p>Github source is here: <a href="https://github.com/pconrad/processing-examples">https://github.com/pconrad/processing-examples</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Example</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="Example_2_2_color_variation">Example_2_2_color_variation</a></td>
+      <td>A variation on an example from Reas and Fry, with color varying on each frame, cycling through the Hues of the HSB color space (Hue/Saturation/Brightness).  Click to change the color to one that is 180 degrees in Hue from current color.</td>
+    </tr>
+    <tr>
+      <td><a href="FunShapes">FunShapes</a></td>
+      <td>A further variation that allows selecting shapes</td>
+    </tr>
+    <tr>
+      <td><a href="Stick_Figure">Stick_Figure</a></td>
+      <td>stick figure with hard coded values</td>
+    </tr>
+    <tr>
+      <td><a href="Stick_Figure_02">Stick_Figure_02</a></td>
+      <td>stick figure using variables and <code class="highlighter-rouge">PVector</code> objects</td>
+    </tr>
+    <tr>
+      <td><a href="Stick_Figure_03">Stick_Figure_03</a></td>
+      <td>stick figure via function call, and with keyboard control over arms, legs and position</td>
+    </tr>
+    <tr>
+      <td><a href="Stick_Figure_04">Stick_Figure_04</a></td>
+      <td>stick figure with sliders</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="outline-of-a-processing-sketch">Outline of a Processing Sketch</h1>
+
+<pre><code class="language-processing">
+void setup() {
+ // run once to initialize
+}
+
+void draw() {
+ // run every frame
+}
+
+</code></pre>
+
+<h1 id="some-useful-idioms">Some useful idioms</h1>
+
+<ul>
+  <li>To clear frame before drawing, use this at top of <code class="highlighter-rouge">draw()</code>
+    <pre><code class="language-processing"> background(204); // 204 is the color, in this case, light grey
+</code></pre>
+  </li>
+  <li>To draw a continuous line
+    <pre><code class="language-processing"> line(mouseX, mouseY, pmouseX, pmouseY);
+</code></pre>
+  </li>
+</ul>
+
+<h1 id="some-useful-special-values">Some useful special values</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable Name</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">framecount</code></td>
+      <td>increments by one with each frame</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">mousePressed</code></td>
+      <td>is the mouse pressed?</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">mouseX</code>,<code class="highlighter-rouge">mouseY</code></td>
+      <td>location of the mouse</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">pmouseX</code>,<code class="highlighter-rouge">pmouseY</code></td>
+      <td>location of the mouse during previous frame</td>
+    </tr>
+  </tbody>
+</table>
