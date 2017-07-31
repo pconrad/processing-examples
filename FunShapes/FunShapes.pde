@@ -2,8 +2,13 @@
 // Getting Started with Processing by Casey Reas and Ben Fry
 // P. Conrad, 7/27/2017
 
+char shape = 'c';
+
 int hue= 0;
-int delta = 1;
+int hueDelta = 4;
+float shapeDelta = 20.0;
+
+float prevShapeX=0, prevShapeY=0;
 
 void setup() {
   size(512,512);
@@ -12,11 +17,34 @@ void setup() {
 }
 
 void draw() {
-  hue = (hue + delta) % 360;
-  if ( mousePressed ) {
-    fill ( (hue + 180) % 360, 100,100,50);
-  } else {
+  if (mousePressed && dist(prevShapeX,prevShapeY,mouseX,mouseY) > shapeDelta) {
+    hue = (hue + hueDelta) % 360;
     fill ( (hue), 100,100,50);
+    switch(shape) {
+      case 'c': 
+      ellipse(mouseX, mouseY, 80, 80);
+      break;
+    case 'r': 
+      rect(mouseX, mouseY, 80, 80);
+      break;
+    case 's': 
+      star(mouseX, mouseY, 80, 20, 5);  
+      break;
+    default:             
+      break;
+    }
+    
+    prevShapeX = mouseX; prevShapeY = mouseY;
   }
-  ellipse(mouseX, mouseY, 80, 80);
+}
+
+void keyPressed() {
+   if (key=='c' || key == 'C') {
+      shape = 'c'; 
+   } else if (key=='r' || key == 'R') {
+      shape = 'r'; 
+   } else if (key=='s' || key == 'S') {
+      shape = 's'; 
+   }
+  
 }
