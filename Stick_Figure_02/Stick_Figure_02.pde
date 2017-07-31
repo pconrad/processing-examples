@@ -13,7 +13,7 @@ void draw() {
    float headDiameter = 50;
    float totalHeight=100;
    float legAngleDegrees = 60;
-   float armAngleDegrees = 120;
+   float armAngleDegrees = 80;
    float legLength = 50;
    float armLength = 40;
    float neckLength = 20;
