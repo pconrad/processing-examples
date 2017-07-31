@@ -1,4 +1,5 @@
 ---
+layout: default
 ---
 
 # Processing Examples by P. Conrad
