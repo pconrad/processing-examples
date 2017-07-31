@@ -12,9 +12,11 @@ Github source is here: <https://github.com/pconrad/processing-examples>
 | Example | Description |
 |---------|-------------|
 | [Example_2_2_color_variation](Example_2_2_color_variation) | A variation on an example from Reas and Fry, with color varying on each frame, cycling through the Hues of the HSB color space (Hue/Saturation/Brightness).  Click to change the color to one that is 180 degrees in Hue from current color.  |
+| [FunShapes](FunShapes) | A further variation that allows selecting shapes |
 | [Stick_Figure](Stick_Figure) | stick figure with hard coded values |
 | [Stick_Figure_02](Stick_Figure_02) | stick figure using variables and `PVector` objects |
 | [Stick_Figure_03](Stick_Figure_03) | stick figure via function call, and with keyboard control over arms, legs and position |
+| [Stick_Figure_04](Stick_Figure_04) | stick figure with sliders |
 
 # Outline of a Processing Sketch
 
